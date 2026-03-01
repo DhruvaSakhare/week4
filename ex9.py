@@ -15,7 +15,7 @@ def sliding_weighted_score(numbers, B=1.5, E=0.5):
         if N == 1:
             weight = 1.0  # avoid division by zero
         else:
-            weight = B - (B - E) * (P - 1) / (N - 1)
+            weight = B - (B - E) * (P - 2) / (N - 1)
 
         total += value * weight
 
